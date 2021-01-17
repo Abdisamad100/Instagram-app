@@ -28,6 +28,13 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
+UPLOADCARE = {
+    'pub_key': 'demopublickey',
+    'secret': 'demoprivatekey',
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'insta.apps.InstaConfig',
-    'bootstrap3'
+    'bootstrap3',
+    'pyuploadcare.dj',
 ]
 
 MIDDLEWARE = [
