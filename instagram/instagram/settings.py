@@ -32,8 +32,8 @@ ALLOWED_HOSTS = []
 
 
 UPLOADCARE = {
-    'pub_key': 'demopublickey',
-    'secret': 'demoprivatekey',
+    'pub_key': 'feb41773b5bfbd2ebe8b',
+    'secret': '187854e78051181bd209',
 }
 
 # Application definition
@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'insta.apps.InstaConfig',
     'bootstrap3',
     'pyuploadcare.dj',
+    'crispy_forms',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +141,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+LOGIN_REQUIRED_URL='home'
