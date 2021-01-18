@@ -19,7 +19,7 @@ To get the project .......
   
 1. Cloning the repository:  
  
- git clone :https://github.com/Abdisamad100/Istagram-app.git
+ git clone :https://github.com/Abdisamad100/Instagram-app.git
 2. Navigate into the folder and install requirements  
  
  cd Istagram-app pip install -r requirements.txt 
