@@ -16,7 +16,7 @@
                 <img src="{{user.profile.photo.cdn_url}}" alt="Profile Photo" width="70" height="70" class=""
                 style="border-radius: 50%">
                 {% else %}
-                <img src="/static/images/avatar.jpg" alt="Avatar"  width="70" height="70" class=""
+                <img src="static/images/avatar.png" alt="Avatar"  width="70" height="70" class=""
                 style="border-radius: 50%">
                 {% endif %}
                 <a href="{% url 'profile' username=user.username %}" class="link">
