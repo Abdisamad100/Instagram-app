@@ -1,6 +1,7 @@
 *{
     font-size:20px;
     font-weight: 100;
+    font-family:roboto;
 }
 
 body {
@@ -84,4 +85,7 @@ nav {
 #logo-name {
     width: 120px;
     border-left: 1px solid black;
+}
+.frame{
+    margin-top:100px;
 }
