@@ -1,5 +1,5 @@
 {% extends 'registration/base.html' %}
-{% load bootstrap4 %}
+{% load bootstrap3 %}
 {% load static %}
 
 {% block content %}
@@ -7,20 +7,21 @@
     <div class="row mt-5">
         <div class="col-md-6">
             <div class="frame">
-                <img src="/static/images/ig.png" alt="Handset Images">
+                <img src="/static/images/logo.png" height="200px"; padding-top="500px"; alt="Handset Images">
             </div>
         </div>
         <div class="col-md-6">
             <div>
                 <div class="section">
                     <div class="logo mb-5 mt-3">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2000px-Instagram_logo.svg.png" alt="" class="img-fluid" width="300">
+                        <h1>Instagram</h1>
+                        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2000px-Instagram_logo.svg.png" alt="" class="img-fluid" width="50"> -->
                     </div>
                     <div class="centre">
                         {% if user.profile.photo %}
                         <img src="{{user.profile.photo.cdn_url}}" alt="Profile Photo" width="300" height="300" class="" style="border-radius: 50%">
                         {% else %}
-                        <img src="/static/images/avatar.jpg" alt="Avatar" width="300" height="300" class="" style="border-radius: 50%">
+                        <img src="/static/images/avatar.png" alt="Avatar" width="300" height="300" class="" style="border-radius: 50%">
                         {% endif %}
                         <div class="clearfix"></div>
                         <a href="/home" class="btn btn-sm btn-primary login mt-3">Continue as {{request.user}}?</a>
