@@ -1,4 +1,4 @@
-{% load bootstrap4 %}
+{% load bootstrap3 %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
     {% if title %}
     <title>Instalite | {{title}}</title>
     {% else %}
-    <title>Instalite</title>
+    <title>Instagram</title>
     {% endif %}
 
     {% block styles %}
@@ -26,7 +26,9 @@
         <!-- Custom -->
         <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-        <link rel="stylesheet" href="{% static 'css/images' %}">
+        <link rel="stylesheet" href="{% static 'images' %}">
+        {% bootstrap_css %}
+    
 
     {% endblock %}
 </head>
